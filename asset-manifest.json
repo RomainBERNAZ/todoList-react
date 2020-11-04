@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/todoList-react/static/css/main.defd3269.chunk.css",
+    "main.css": "/todoList-react/static/css/main.1be3a827.chunk.css",
     "main.js": "/todoList-react/static/js/main.db2c2a4e.chunk.js",
     "main.js.map": "/todoList-react/static/js/main.db2c2a4e.chunk.js.map",
     "runtime-main.js": "/todoList-react/static/js/runtime-main.28d41687.js",
@@ -10,14 +10,14 @@
     "static/js/3.a0bd623a.chunk.js": "/todoList-react/static/js/3.a0bd623a.chunk.js",
     "static/js/3.a0bd623a.chunk.js.map": "/todoList-react/static/js/3.a0bd623a.chunk.js.map",
     "index.html": "/todoList-react/index.html",
-    "static/css/main.defd3269.chunk.css.map": "/todoList-react/static/css/main.defd3269.chunk.css.map",
+    "static/css/main.1be3a827.chunk.css.map": "/todoList-react/static/css/main.1be3a827.chunk.css.map",
     "static/js/2.6ee09573.chunk.js.LICENSE.txt": "/todoList-react/static/js/2.6ee09573.chunk.js.LICENSE.txt",
     "static/media/App.css": "/todoList-react/static/media/Morganite-Bold.25e67bb2.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.28d41687.js",
     "static/js/2.6ee09573.chunk.js",
-    "static/css/main.defd3269.chunk.css",
+    "static/css/main.1be3a827.chunk.css",
     "static/js/main.db2c2a4e.chunk.js"
   ]
 }
