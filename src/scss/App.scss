@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Morganite;
+  src: url('./fonts/Morganite/Morganite-Bold.ttf')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A49C9B;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 11rem;
+  text-align: center;
+  color: black;
+  font-family: Morganite;
+
+  span {
+    color: white;
+  }
+}
+
+// Style du formulaire -Input + Bouton affiché dès le démmarage de l'app. 
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  button {
+    border: solid black 2px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: white;
+  }
+
+  button {
+    color: silver;
+    background: #f7fffe;
+    cursor: pointer;
+    border-left: none;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background: silver;
+    color: white;
+  }
+}
+
+// Style des éléments créés après validation du formulaire.
+
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+
+    .todo {
+      border: solid black 2px;
+      margin: 0.5rem;
+      background: white;
+      font-size: 1.5rem;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 1s ease;
+
+      li {
+        flex: 1;
+        padding: 0rem 0.5rem;
+      }
+
+      .trash-btn{
+        border-left: black solid 2px;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        background: silver;
+        color: white;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+
+    }
+  }
+}
+
+

@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import '../src/scss/App.css';
+import Form from './components/Form'
+import TodoList from './components/TodoList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+  const [inputText, setInputText] =useState("");
+  const [todos, setTodos] = useState([]);
+
+// AU DEMMARAGE 
+useEffect (() => {
+  getLocalTodos();
+    }, []);
+
+//USE EFFECT
+useEffect (() => {
+  saveLocalTodos();
+    },[todos]);
+
+
+
+// Sauvegarde en stockage local 
+const saveLocalTodos = () => {
+    localStorage.setItem('todos', JSON.stringify(todos))
+};
+
+const getLocalTodos = () => {
+  if(localStorage.getItem('todos') ===null ){
+    localStorage.setItem('todos', JSON.stringify([]));
+  }else {
+    let todoLocal = JSON.parse(localStorage.getItem('todos'));
+    setTodos(todoLocal);
+  }
+};
+
+
+return (
+<div className="container">
+    <h1><span>T</span>ODO LIS<span>T</span></h1>
+  
+  <Form inputText={inputText} 
+        setInputText={setInputText}
+        todos={todos} 
+        setTodos={setTodos}/>
+  
+  <TodoList todos={todos} 
+            setTodos={setTodos}/>
+</div>
+);
 }
 
 export default App;
